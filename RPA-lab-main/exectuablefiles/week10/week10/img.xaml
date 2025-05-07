@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="img" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="img_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="img" sap:VirtualizedContainerService.HintSize="722,985" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Top Engineering Colleges in Hyderabad -" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,962" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="988649e4-6547-4d03-ad08-0bfc9812d5d7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,722" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="exttext" />
+              <Variable x:TypeArguments="x:String" Name="img" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetOCRText Text="{x:Null}" WordsInfo="{x:Null}" DisplayName="Get OCR Text 'IMG'" sap:VirtualizedContainerService.HintSize="416,244" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p:UiPathDocumentOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="300,25" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_2" Image="[Image]" Language="auto" NoopExecution="False" Profile="None" Scale="1" Text="[exttext]" Timeout="100000" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a941863c-8512-4ca0-88fe-6896fc343fdb" InformativeScreenshot="d90ecb6534cac5e4aeb94caa9afed9fa" Selector="&lt;webctrl src='https://i0.wp.com/cmrithyderabad.edu.in/wp-content/uploads/2021/09/final.jpg?fit=622%2C125&amp;amp;ssl=1' tag='IMG' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+            </ui:GetOCRText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[exttext]" />
+            <uix:NGetText DisplayName="Get Text 'CMRIT Updates'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="988649e4-6547-4d03-ad08-0bfc9812d5d7" TextString="[img]" Version="V4">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="cmrithyderabad.edu.in" ContentHash="VgzKsRqREEiiArOoWuUVPg" DesignTimeRectangle="492, 233, 374, 75" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl src='https://i0.wp.com/cmrithyderabad.edu.in/wp-content/uploads/2021/09/final.jpg?fit=622%2C125&amp;amp;ssl=1' tag='IMG' type='' class='attachment-large size-large wp-image-7944' aaname='' /&gt;" Guid="a9af5476-f1a3-4555-8da2-720c640f6419" InformativeScreenshot="c3dcb84bb6795a9bca2f882d3f0c370a.png" Reference="N4tzFEFXfUe-XT-BjvmC-A/LCjQTLwRm0K7LfpCp36upQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Top Engineering Colleges in Hyderabad - CMR Institute of Technology' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="72ff6fd0-1223-49fa-b5dd-834c43fae876" CvTextArea="941, 263, 106, 17" CvTextArgument="CMRIT Updates" CvType="Text" DesignTimeRectangle="938, 258, 112, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;CMRIT Updates&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='page' tag='A' type='' class='elementskit-btn  whitespace--normal' check:innerText='CMRIT Updates' /&gt;" Guid="4440d2f1-bc82-4ea4-b818-8021e02339b8" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,110" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[img]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" ContentHash="rwmunhyj_EibjEay6Ru-aA" IconBase64="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" InformativeScreenshot="eb1f11408b20b574002132a565186447.jpg" Reference="N4tzFEFXfUe-XT-BjvmC-A/0IZ3B4XEFkOLNYfGH-rMSg" Selector="&lt;html app='msedge.exe' title='Top Engineering Colleges in Hyderabad - CMR Institute of Technology' /&gt;" Url="https://cmrithyderabad.edu.in/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
